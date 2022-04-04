@@ -25,6 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        Gate::define('post_index', function($user){return !is_null($user->id);});
+
         //
     }
 }

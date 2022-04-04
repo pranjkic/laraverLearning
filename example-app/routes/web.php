@@ -41,6 +41,7 @@ Route::delete('/deleteRoute', function () {
 });
 
 Route::resource('photos', 'App\Http\Controllers\PhotoController');
+Route::resource('posts', 'App\Http\Controllers\PostController');
 
 // Auth::routes();
 
