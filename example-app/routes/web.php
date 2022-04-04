@@ -40,6 +40,8 @@ Route::delete('/deleteRoute', function () {
     return 'Delete route';
 });
 
+Route::resource('photos', 'App\Http\Controllers\PhotoController');
+
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
