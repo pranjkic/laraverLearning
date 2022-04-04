@@ -21,6 +21,22 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+Route::get('/getRoute', function () {
+    return 'Get route';
+});
+Route::post('/postRoute', function () {
+    return 'Post route';
+});
+Route::put('/putRoute', function () {
+    return 'Put route';
+});
+Route::patch('/patchRoute', function () {
+    return 'Patch route';
+});
+Route::delete('/deleteRoute', function () {
+    return 'Delete route';
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
